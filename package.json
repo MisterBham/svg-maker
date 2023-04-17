@@ -1,0 +1,30 @@
+{
+  "name": "svg-maker",
+  "version": "1.0.0",
+  "description": "![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)\r [Place Screenshot of Application here]",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterBham/svg-maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterBham/svg-maker/issues"
+  },
+  "homepage": "https://github.com/MisterBham/svg-maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
