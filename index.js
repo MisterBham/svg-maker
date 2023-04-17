@@ -7,7 +7,7 @@ const questions = [
   {
     type: "input",
     name: "text",
-    message: "Enter up to 3 text characters.",
+    message: "Enter up to 3 text characters. \n NOTE: text will be capatilized automatically.",
     validate: (input) => {
       if (input == "" || input > 3) {
         return console.log(
@@ -69,16 +69,19 @@ const questions = [
 
 function writeToFile(answers) {
   let finalProduct;
+  let text = `${answers.text}`;
+  
+  text = text.toUpperCase();
 
   if (answers.shape === 'Circle') {
-    const newShape = new Circle(`${answers.shapecolor}`, `${answers.text}`, `${answers.textcolor}`);
-    console.log(newShape.render());
+    const newShape = new Circle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
     finalProduct = newShape.render();
-    console.log(finalProduct);
   } else if (answers.shape === "Triangle") {
-    new Triangle(`${answers.shapecolor}, ${answers.text}, ${answers.textcolor}`);
+    const newShape = new Triangle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
+    finalProduct = newShape.render();
   } else {
-    new Rectangle(`${answers.shapecolor}, ${answers.text}, ${answers.textcolor}`);
+    const newShape = new Rectangle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
+    finalProduct = newShape.render();
   }
 
   fs.writeFile('./examples/logo.svg', finalProduct, (err) =>
