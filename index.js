@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { Circle, Triangle, Rectangle } = require('./lib/shapes');
+const { Shape, Circle, Triangle, Square } = require('./lib/shapes');
 
 // Line of questioning
 const questions = [
@@ -69,19 +69,26 @@ const questions = [
 
 function writeToFile(answers) {
   let finalProduct;
+  let svgEl = `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"> <style> .svg { font: 50px sans-serif }</style>`;
+
   let text = `${answers.text}`;
-  
   text = text.toUpperCase();
 
   if (answers.shape === 'Circle') {
     const newShape = new Circle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
-    finalProduct = newShape.render();
+    svgEl += newShape.render();
+    svgEl += `<text x="105" y="115" class="svg" fill="${answers.textcolor}">${text}</text></svg>`;
+    finalProduct = svgEl;
   } else if (answers.shape === "Triangle") {
     const newShape = new Triangle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
-    finalProduct = newShape.render();
+    svgEl += newShape.render();
+    svgEl += `<text x="105" y="140" class="svg" fill="${answers.textcolor}">${text}</text></svg>`;
+    finalProduct = svgEl;
   } else {
-    const newShape = new Rectangle(`${answers.shapecolor}`, text, `${answers.textcolor}`);
-    finalProduct = newShape.render();
+    const newShape = new Square(`${answers.shapecolor}`, text, `${answers.textcolor}`);
+    svgEl += newShape.render();
+    svgEl += `<text x="100" y="115" class="svg" fill="${answers.textcolor}">${text}</text></svg>`;
+    finalProduct = svgEl;
   }
 
   fs.writeFile('./examples/logo.svg', finalProduct, (err) =>
