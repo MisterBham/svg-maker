@@ -65,8 +65,6 @@ const questions = [
   }
 ]
 
-// let shapecolor;
-
 function writeToFile(answers) {
   let finalProduct;
   let svgEl = `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"> <style> .svg { font: 50px sans-serif }</style>`;
