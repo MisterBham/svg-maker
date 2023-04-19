@@ -42,7 +42,7 @@ Jest test provided to check render method of each shape.
 Perform test via: `npm test` </br>
 See sample test shown <a href="https://drive.google.com/file/d/19WlDVx5IHQOf2dVkVankXC3uIzuHqq9p/view">here</a>.
 
-<img src="./images/jestTest.jpg" width=25% height=25%>
+<img src="./images/jestTest.jpg" width=50% height=50%>
 
 ### Questions
 Should you have any further questions, please reach the developer at: <a href="mailto:misterbham.dev@gmail.com">misterbham.dev@gmail.com</a>. 
