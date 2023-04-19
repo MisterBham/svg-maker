@@ -27,7 +27,7 @@ Generated SVG logo is 200(h) x 300(w).
 
 ### Usage
 Through NodeJS, using specifically inquirer. </br>
-See sample video showing application workflow <a hred="https://drive.google.com/file/d/16VM3iyqBGFL4B8y_rTFfCZvTNH7dcZ-V/view">here</a>.
+See sample video showing application workflow <a href="https://drive.google.com/file/d/16VM3iyqBGFL4B8y_rTFfCZvTNH7dcZ-V/view" target="_blank">here</a>.
 
 <img src="./images/application-cli-workflow.jpg">
 
@@ -35,12 +35,12 @@ See sample video showing application workflow <a hred="https://drive.google.com/
 Further information regarding this specific license can be found via: https://opensource.org/license/mit/. 
 
 ### Contributing
-Post <a href="https://github.com/MisterBham/svg-maker/issues">Issues</a> on the repo!
+Post <a href="https://github.com/MisterBham/svg-maker/issues" target="_blank">Issues</a> on the repo!
 
 ### Testing
 Jest test provided to check render method of each shape. 
 Perform test via: `npm test` </br>
-See sample test shown <a href="https://drive.google.com/file/d/19WlDVx5IHQOf2dVkVankXC3uIzuHqq9p/view">here</a>.
+See sample test shown <a href="https://drive.google.com/file/d/19WlDVx5IHQOf2dVkVankXC3uIzuHqq9p/view" target="_blank">here</a>.
 
 <img src="./images/jestTest.jpg" width=50% height=50%>
 
