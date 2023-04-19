@@ -19,7 +19,8 @@
 * [Examples](#Examples) 
 
 ### Description
-Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. Generated SVG logo is 200(h) x 300(w).
+Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. </br>
+Generated SVG logo is 200(h) x 300(w).
 
 ### Installation
 `npm install`
