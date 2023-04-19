@@ -1,6 +1,5 @@
 # SVG-maker
 ![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
-Place Screenshot of Application here 
 
 ## Table of Contents 
 * [Description](#Description) 
@@ -17,14 +16,19 @@ Place Screenshot of Application here
 
 * [Questions](#Questions) 
 
+* [Examples](#Examples) 
+
 ### Description
-Node.js command-line application that takes in user input to generate a logo and save it as an SVG file
+Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. Generated SVG logo is 200(h) x 300(w).
 
 ### Installation
 `npm install`
 
 ### Usage
-To create templated SVG's with up to 3 initials
+Through NodeJS, using specifically inquirer. </br>
+See sample video showing application workflow <a hred="https://drive.google.com/file/d/16VM3iyqBGFL4B8y_rTFfCZvTNH7dcZ-V/view">here</a>.
+
+<img src="./images/application-cli-workflow.jpg">
 
 ### License
 Further information regarding this specific license can be found via: https://opensource.org/license/mit/. 
@@ -34,9 +38,17 @@ Post <a href="https://github.com/MisterBham/svg-maker/issues">Issues</a> on the 
 
 ### Testing
 Jest test provided to check render method of each shape. 
-Perform test via: `npm test`
+Perform test via: `npm test` </br>
+See sample test shown <a href="https://drive.google.com/file/d/19WlDVx5IHQOf2dVkVankXC3uIzuHqq9p/view">here</a>.
+
+<img src="./images/jestTest.jpg" width=25% height=25%>
 
 ### Questions
-MisterBham- Check them out on their [GitHub page](https://github.com/MisterBham)
 Should you have any further questions, please reach the developer at: <a href="mailto:misterbham.dev@gmail.com">misterbham.dev@gmail.com</a>. 
+
+### Examples
+
+<img src="./images/logo-example1.svg" width=15% height=15%>
+<img src="./images/logo-example2.svg" width=15% height=15%>
+<img src="./images/logo-example3.svg" width=15% height=15%>
 

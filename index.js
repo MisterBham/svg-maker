@@ -11,7 +11,7 @@ const questions = [
     validate: (input) => {
       if (input == "" || input > 3) {
         return console.log(
-          "Cannot proceed without at least 1-3 text characters!"
+          "\n Cannot proceed without at least 1-3 text characters!"
         );
       } else {
         return true;
@@ -26,7 +26,7 @@ const questions = [
     validate: (input) => {
       if (input == "") {
         return console.log(
-          "This is required! Please provide a color keyword or a hexadecimal number for your text color."
+          "\n This is required! Please provide a color keyword or a hexadecimal number for your text color."
         );
       } else {
         return true;
@@ -41,7 +41,7 @@ const questions = [
     validate: (list) => {
       if (list == "") {
         return console.log(
-          "Cannot proceed without choosing a shape! Please select from list."
+          "\n Cannot proceed without choosing a shape! Please select from list."
         );
       } else {
         return true;
@@ -56,7 +56,7 @@ const questions = [
     validate: (input) => {
       if (input == "") {
         return console.log(
-          "This is required! Please provide a color keyword or a hexadecimal number for your shape."
+          "\n This is required! Please provide a color keyword or a hexadecimal number for your shape."
         );
       } else {
         return true;
@@ -92,13 +92,13 @@ function writeToFile(answers) {
   }
 
   fs.writeFile('./examples/logo.svg', finalProduct, (err) =>
-      err ? console.log(err) : console.log('Generated logo.svg!')
+    err ? console.log(err) : console.log('Generated logo.svg!')
   );
 }
 
 function init() {
   inquirer.prompt(questions)
-  .then (answers => writeToFile(answers))
+    .then(answers => writeToFile(answers))
 }
 
 // Start on load
