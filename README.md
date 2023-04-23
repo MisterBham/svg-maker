@@ -40,7 +40,7 @@ Post <a href="https://github.com/MisterBham/svg-maker/issues" target="_blank">Is
 ### Testing
 Jest test provided to check render method of each shape. 
 Perform test via: `npm test` </br>
-See sample test shown <a href="https://drive.google.com/file/d/19WlDVx5IHQOf2dVkVankXC3uIzuHqq9p/view" target="_blank">here</a>.
+See sample test shown <a href="https://drive.google.com/file/d/13MseZBV45AWGObY0cTPuwKKNRvkGRJdY/view" target="_blank">here</a>.
 
 <img src="./images/jestTest.jpg" width=50% height=50%>
 
